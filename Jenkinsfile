@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     SONAR_TOKEN = credentials('SONAR_TOKEN')
-    # Path to nvm and Node.js for all shell steps
+    // Path to nvm and Node.js for all shell steps
     NVM_DIR = "${env.HOME}/.nvm"
     NODE_SETUP = '''
       [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
